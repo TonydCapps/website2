@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>3-Column Ideas</title>
+        <link rel="stylesheet" href="style.css"/>
+    </head>
+<body>
+    <nav class="main-nav"> 
+        <ul> 
+            <li>
+                <a href="index.html">Home</a>
+            </li> 
+            <li>
+                <a href="ideas.html">Ideas</a>
+            </li>
+             <li>
+                <a href="about.html">About</a>
+            </li>
+             <li>
+                <a href="contact.html">Contact</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <div class="overlay">
+            <button id="toggle-mode">Toggle Dark Mode</button>
+            <h1 id="main-title">Expanded Ideas - 3 Column Layout</h1>
+            <div class="columns">
+                <div class="column">
+                    <h3>Penetration Testing</h3>
+                    <p>Offering freelance pen testing services to detect common vulnerabilities like SQL injections, cross-site scripting, and misconfigurations. Reports include risk levels, technical details, and actionable fixes.</p>
+                </div>
+                <div class="column">
+                    <h3>Cyber Emergency Response</h3>
+                    <p>A rapid response team that assists in identifying, containing, and recovering from digital attacks. Includes forensic analysis, password resets, account recovery, and future prevention planning.</p>
+                </div>
+                <div class="column">
+                    <h3>Home Security Consulting</h3>
+                    <p>In-person or virtual walkthroughs of home network setups to improve protection against online threats. Tailored advice for families with children, gamers, or remote workers needing safe and fast connections.</p>
+                </div>
+            </div>
+            <p><a href="index.html">Back to Homepage</a> or <a href="#main-title">jump to top</a></p>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Tony Capps</p>
+    </footer>
+    <script>
+    const toggleBtn = document.getElementById("toggle-mode");
+    toggleBtn.addEventListener("click", () => {
+        document.body.classList.toggle("light-mode");
+    });
+</script>
+</body>
+</html>
