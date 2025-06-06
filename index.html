@@ -10,7 +10,10 @@
 </head> 
 <body> 
     <nav class="main-nav"> 
-        <ul> 
+        <button class="nav-toggle" id="nav-toggle" aria lable="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <ul id="nav-menu"> 
             <li><a href="index.html"><i class="fas fa-home"></i>Home</a></li>
             <li><a href="ideas.html"><i class="fas fa-lightbulb"></i>Ideas</a></li>
             <li><a href="projects.html"><i class="fas fa-tools"></i> Projects</a></li>
@@ -41,11 +44,10 @@
             <section>
                 <h2>Why Cybersecurity?</h2>
                 <p>Technology is everywhere, and so are digital threats. I believe that understanding cybersecurity isn't just for experts—it's a necessity for anyone living in the digital age. My goal is to make security knowledge more accessible and useful for everyone.</p>
-            <!-- Scalable image -->
             <img src="images/cybersecurity.jpg" alt="Cybersecurity concepts" class="scalable-image">
             </section>
 
-            <p><a href="ideas.html">Visit the 3-Column Ideas Page</a> or <a href="#why-cybersecurity">jump to Why Cybersecurity section</a></p>
+            <p><a href="ideas.html">Visit The Ideas Page</a> or <a href="#why-cybersecurity">jump to Why Cybersecurity section</a></p>
         </div>
     </main>
 
@@ -53,9 +55,17 @@
         <p>&copy; 2025 Tony Capps</p>
     </footer>
 <script>
+    //Dark Mode
     const toggleBtn = document.getElementById("toggle-mode");
     toggleBtn.addEventListener("click", () => {
         document.body.classList.toggle("light-mode");
+    });
+
+    //Menu Toggle
+    const navToggle = document.getElementById("nav-toggle");
+    const navMenu = document.getElementById("nav-menu");
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
     });
 </script>
 </body>

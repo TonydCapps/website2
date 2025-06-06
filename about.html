@@ -4,7 +4,8 @@
         <meta charset="UTF-8" /> 
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
         <title>About</title> 
-        <link rel="stylesheet" href="style.css"/> 
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"> 
     </head> 
     <body> 
     <nav class="main-nav"> 
@@ -22,12 +23,13 @@
     <div class="overlay">
         <button id="toggle-mode">Toggle Dark Mode</button>
         <h1 id="main-title">About Me</h1>
-<div class="about-flex">
-  <img src="https://via.placeholder.com/200" alt="Tony Capps Profile" class="profile-pic" />
-  <div>
+    <div class="about-flex">
+         <img src="/images/me.jpg" alt="Tony Capps Profile" class="profile-pic" />
+    <div>
     <p>Hi! I'm Tony Capps, a cybersecurity enthusiast and aspiring ethical hacker. I started this site to share ideas, build helpful tools, and raise awareness about how everyone—from individuals to businesses—can protect themselves online.</p>
     <p>When I'm not working on security scripts or websites, I enjoy tech reviews, gaming, and learning about open-source intelligence tools. I believe in teaching by doing, and this website is one of the ways I'm putting that belief into practice.</p>
-  </div>
+        </div>
+    </div>
 </div>
 
 </main>
@@ -39,4 +41,6 @@ const toggleBtn = document.getElementById("toggle-mode");
 toggleBtn.addEventListener("click", () => {
     document.body.classList.toggle("light-mode");
 });
-</script> </body> </html> 
+</script> 
+</body> 
+</html> 
