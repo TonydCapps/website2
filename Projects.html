@@ -42,6 +42,11 @@
     toggleBtn.addEventListener("click", () => {
         document.body.classList.toggle("light-mode");
     });
+    const navToggle = document.getElementById("nav-toggle");
+    const navMenu = document.getElementById("nav-menu");
+    navToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("open");
+    });
 </script>
 </main>
 </body>
